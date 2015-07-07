@@ -1,0 +1,52 @@
+{
+  "requireCurlyBraces": [
+    "if",
+    "else",
+    "for",
+    "while",
+    "do"
+  ],
+  "requireSpaceAfterKeywords": [
+    "if",
+    "for",
+    "while",
+    "do",
+    "switch",
+    "return"
+  ],
+  "disallowSpacesInFunctionExpression": {
+    "beforeOpeningRoundBrace": true
+  },
+  "disallowTrailingWhitespace": true,
+  "disallowMixedSpacesAndTabs": true,
+  "requireMultipleVarDecl": true,
+  "requireSpacesInsideObjectBrackets": "all",
+  "requireSpaceBeforeBinaryOperators": [
+    "+",
+    "-",
+    "/",
+    "*",
+    "=",
+    "==",
+    "===",
+    "!=",
+    "!=="
+  ],
+  "disallowSpaceAfterPrefixUnaryOperators": [
+    "++",
+    "--",
+    "+",
+    "-"
+  ],
+  "disallowSpaceBeforePostfixUnaryOperators": [
+    "++",
+    "--"
+  ],
+  "disallowKeywords": [
+    "with"
+  ],
+  "disallowKeywordsOnNewLine": [
+    "else"
+  ],
+  "excludeFiles": ["node_modules/**", "js/vendor/**"]
+}
