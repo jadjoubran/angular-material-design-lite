@@ -12,7 +12,7 @@ This is an Angular wrapper that provides directives on top of Google's [Material
 
 ## Installation
 
-bower install 
+bower install angular-materail-design-lite 
 
 
 ## Supported Directives
