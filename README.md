@@ -17,11 +17,11 @@ bower install angular-materail-design-lite
 
 ## Supported Directives
 
-`<mdl-text-field label="First Name" ng-model="first_name"></mdl-text-field>`
-`<mdl-floating-text-field label="First Name" ng-model="first_name"></mdl-floating-text-field>`
-`<mdl-checkbox label="Urgent package" ng-model="is_urgent"></mdl-checkbox>`
-`<mdl-radio label="Male" value="male" ng-model="gender"></mdl-radio>`
-`<mdl-radio label="Female" value="female" ng-model="gender"></mdl-radio>`
+`<mdl-text-field label="First Name" ng-model="first_name"></mdl-text-field>`  
+`<mdl-floating-text-field label="First Name" ng-model="first_name"></mdl-floating-text-field>`  
+`<mdl-checkbox label="Urgent package" ng-model="is_urgent"></mdl-checkbox>`  
+`<mdl-radio label="Male" value="male" ng-model="gender"></mdl-radio>`  
+`<mdl-radio label="Female" value="female" ng-model="gender"></mdl-radio>`  
 
 
 ## Issues and Feature Requests
@@ -32,6 +32,7 @@ Open a new issue.
 
 Here's what I'm planning for the next releases
 
++ fix bower versionning
 + implement buttons
 + setup gh-pages
 + add examples folder
