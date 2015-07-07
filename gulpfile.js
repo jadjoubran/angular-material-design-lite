@@ -7,15 +7,15 @@
   ngAnnotate = require('gulp-ng-annotate');
 
   gulp.task('js', function() {
-    return gulp.src('./src/angular-mdl.js')
-    .pipe( rename('angular-mdl.min.js') )
+    return gulp.src('./src/angular-material-design-lite.js')
+    .pipe( rename('angular-material-design-lite.min.js') )
     .pipe( ngAnnotate() )
     .pipe( uglify() )
     .pipe( gulp.dest('./dist') );
   });
 
   gulp.task('watch', function() {
-    gulp.watch('./src/angular-mdl.js', ['js']);
+    gulp.watch('./src/angular-material-design-lite.js', ['js']);
     return true;
   });
 

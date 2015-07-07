@@ -1,5 +1,7 @@
-# angular-mdl
+# angular-material-design-lite
 > Version 0.0.1
+
+![Angular Material Design Lite](http://i.imgur.com/SI4Nmb3.png)
 
 Angular wrapper for Material Design Lite.
 
@@ -10,6 +12,13 @@ This is an Angular wrapper that provides directives on top of Google's [Material
 
 ## Installation
 
+bower install 
+
+
+## Supported Directives
+
+`<mdl-text-field label="First Name" model="first_name"></mdl-text-field>`
+
 
 ## Issues and Feature Requests
 
@@ -19,10 +28,8 @@ Open a new issue.
 
 Here's what I'm planning for the next releases
 
++ implement floating text fields
 + implement buttons
-+ implement text fields
-+ add graphic to readme.md
-+ setup bower (angular and mdl as dependencies)
 + setup gh-pages
 + add examples folder
 + split components across multiple files
@@ -34,5 +41,7 @@ Here's what I'm planning for the next releases
 
 ### v0.0.1
 
-+ repo setup
++ implement text fields
++ setup bower
 + gulp setup
++ repo setup

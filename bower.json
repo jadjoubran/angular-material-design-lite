@@ -1,0 +1,30 @@
+{
+  "name": "angular-material-design-lite",
+  "version": "0.0.1",
+  "homepage": "https://github.com/jadjoubran/angular-material-design-lite",
+  "authors": [
+    "Jad Joubran <joubran.jad@gmail.com>"
+  ],
+  "description": "Angular wrapper for Material Design Lite.",
+  "main": "dist/angular-material-design-lite.min.js",
+  "keywords": [
+    "angular",
+    "material",
+    "design",
+    "lite",
+    "mdl",
+    "angular-mdl"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.2",
+    "material-design-lite": "~1.0.0"
+  }
+}
