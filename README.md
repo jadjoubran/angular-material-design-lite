@@ -1,13 +1,9 @@
 # angular-material-design-lite
-> Version 0.0.1
+> Version 0.0.3
 
 ![Angular Material Design Lite](http://i.imgur.com/SI4Nmb3.png)
 
-Angular wrapper for Material Design Lite.
-
-
-## OVERVIEW
-This is an Angular wrapper that provides directives on top of Google's [Material Design Lite](http://getmdl.io).
+Angular wrapper for [Material Design Lite](http://getmdl.io).
 
 
 ## Installation
@@ -22,6 +18,7 @@ bower install angular-materail-design-lite
 `<mdl-checkbox label="Urgent package" ng-model="is_urgent"></mdl-checkbox>`  
 `<mdl-radio label="Male" value="male" ng-model="gender"></mdl-radio>`  
 `<mdl-radio label="Female" value="female" ng-model="gender"></mdl-radio>`  
+`<mdl-switch label="Notifications" ng-model="show_notifications"></mdl-switch>`
 
 
 ## Issues and Feature Requests
@@ -40,6 +37,10 @@ Here's what I'm planning for the next releases
 
 
 ## Changelog
+
+### 0.0.3
+
++ implement switch
 
 
 ### 0.0.2

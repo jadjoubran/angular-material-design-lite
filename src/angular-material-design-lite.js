@@ -8,7 +8,7 @@
   angular.module('mdl').directive('mdlTextField', function(){
     return {
       restrict: 'EA',
-      template: '<div class="mdl-textfield mdl-js-textfield"><input class="mdl-textfield__input" type="text" ng-model="ngModel" /><label class="mdl-textfield__label" for="sample1">{{label}}</label></div>',
+      template: '<div class="mdl-textfield mdl-js-textfield"><input class="mdl-textfield__input" type="text" ng-model="ngModel" /><label class="mdl-textfield__label">{{label}}</label></div>',
       scope: {
         ngModel : '=',
       },
@@ -21,7 +21,7 @@
   angular.module('mdl').directive('mdlFloatingTextField', function(){
     return {
       restrict: 'EA',
-      template: '<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label"><input class="mdl-textfield__input" type="text" ng-model="ngModel" /><label class="mdl-textfield__label" for="sample1">{{label}}</label></div>',
+      template: '<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label"><input class="mdl-textfield__input" type="text" ng-model="ngModel" /><label class="mdl-textfield__label">{{label}}</label></div>',
       scope: {
         ngModel: '='
       },
@@ -58,6 +58,19 @@
     };
   });
 
+
+  angular.module('mdl').directive('mdlSwitch', function(){
+    return {
+      restrict: 'EA',
+      template: '<label class="mdl-switch mdl-js-switch mdl-js-ripple-effect"><input type="checkbox" ng-model="ngModel" class="mdl-switch__input" /><span class="mdl-switch__label">{{label}}</span></label>',
+      scope: {
+        ngModel: '='
+      },
+      link: function($scope, el, $attrs){
+        $scope.label  = $attrs.label;
+      }
+    };
+  });
 
 
 })();
