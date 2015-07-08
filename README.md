@@ -8,7 +8,7 @@ Angular wrapper for [Material Design Lite](http://getmdl.io).
 
 ## Installation
 
-bower install angular-materail-design-lite 
+`bower install angular-materail-design-lite`
 
 
 ## Supported Directives
