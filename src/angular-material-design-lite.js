@@ -1,32 +1,31 @@
 (function(){
-
   "use strict";
 
   angular.module('mdl', []);
 
+  angular.module('mdl').provider("mdlConfig", function(){
+    var provider = this;
 
-  angular.module('mdl').directive('mdlTextField', function(){
-    return {
-      restrict: 'EA',
-      template: '<div class="mdl-textfield mdl-js-textfield"><input class="mdl-textfield__input" type="text" ng-model="ngModel" /><label class="mdl-textfield__label">{{label}}</label></div>',
-      scope: {
-        ngModel : '=',
-      },
-      link: function($scope, el, $attrs){
-        $scope.label  = $attrs.label;
-      }
+    this.floating = true;
+
+    provider.$get = function() {
+      return provider;
     };
   });
 
-  angular.module('mdl').directive('mdlFloatingTextField', function(){
+
+  angular.module('mdl').directive('mdlTextField', function( mdlConfig ){
     return {
       restrict: 'EA',
-      template: '<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label"><input class="mdl-textfield__input" type="text" ng-model="ngModel" /><label class="mdl-textfield__label">{{label}}</label></div>',
+      template: '<div class="mdl-textfield mdl-js-textfield" ng-class="ngClass"><input class="mdl-textfield__input" type="text" ng-model="ngModel" /><label class="mdl-textfield__label">{{label}}</label></div>',
       scope: {
         ngModel: '='
       },
       link: function($scope, el, $attrs){
         $scope.label  = $attrs.label;
+        $scope.ngClass = {
+          'mdl-textfield--floating-label': mdlConfig.floating
+        };
       }
     };
   });

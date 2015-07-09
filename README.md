@@ -14,7 +14,6 @@ Angular wrapper for [Material Design Lite](http://getmdl.io).
 ## Supported Directives
 
 `<mdl-text-field label="First Name" ng-model="first_name"></mdl-text-field>`  
-`<mdl-floating-text-field label="First Name" ng-model="first_name"></mdl-floating-text-field>`  
 `<mdl-checkbox label="Urgent package" ng-model="is_urgent"></mdl-checkbox>`  
 `<mdl-radio label="Male" value="male" ng-model="gender"></mdl-radio>`  
 `<mdl-radio label="Female" value="female" ng-model="gender"></mdl-radio>`  
@@ -29,7 +28,14 @@ Open a new issue.
 
 Here's what I'm planning for the next releases
 
++ expose configProvider + allow to set options for ripples and floating labels
++ use ng-transclude
++ fix ng-model
++ abstract ngClass conditions into service?
++ other classes need options?
++ update readme for mdlFloatingText
 + fix bower versionning
++ keep source file in dist/ + generate sourcemap
 + implement buttons
 + setup gh-pages
 + add examples folder
@@ -37,6 +43,11 @@ Here's what I'm planning for the next releases
 
 
 ## Changelog
+
+### 0.1.0
+
++ exposed mdlConfigProvider
++ ability to enable/disable ripples using mdlConfigProvider
 
 ### 0.0.3
 
