@@ -1,5 +1,5 @@
 # angular-material-design-lite
-> Version 0.0.3
+> Version 0.1.2
 
 ![Angular Material Design Lite](http://i.imgur.com/SI4Nmb3.png)
 
@@ -17,7 +17,11 @@ Angular wrapper for [Material Design Lite](http://getmdl.io).
 `<mdl-checkbox label="Urgent package" ng-model="is_urgent"></mdl-checkbox>`  
 `<mdl-radio label="Male" value="male" ng-model="gender"></mdl-radio>`  
 `<mdl-radio label="Female" value="female" ng-model="gender"></mdl-radio>`  
-`<mdl-switch label="Notifications" ng-model="show_notifications"></mdl-switch>`
+`<mdl-switch label="Notifications" ng-model="show_notifications"></mdl-switch>`   
+`<mdl-button>Flat button</mdl-button>`   
+`<mdl-button theme="primary">Primary Flat button</mdl-button>`   
+`<mdl-button theme="accent">Accept Flat button</mdl-button>`   
+`<mdl-button-raised theme="primary">Primary Raised button</mdl-button-raised>`   
 
 
 ## Configuration options
@@ -38,21 +42,25 @@ Open a new issue.
 
 Here's what I'm planning for the next releases
 
-+ use ng-transclude
-+ fix ng-model
-+ abstract ngClass conditions into service?
-+ other classes need options?
-+ update readme for mdlFloatingText
-+ fix bower versionning
-+ keep source file in dist/ + generate sourcemap
-+ implement buttons
 + setup gh-pages
++ other classes need options
++ implement progress bars
++ observe important attributes
++ keep source file in dist/ + generate sourcemap
 + add examples folder
++ move additional attributes from directive to element
++ fix ng-model
++ abstract ngClass conditions into service
 + split components across multiple files
++ automate releases using gulp
 
 
 
 ### Changelog
+
+#### 0.1.2
+
++ implement buttons
 
 #### 0.1.1
 

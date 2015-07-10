@@ -6,7 +6,6 @@
   "noarg": true,
   "noempty": true,
   "nonew": true,
-  "maxlen": 140,
   "boss": true,
   "eqnull": true,
   "eqeqeq": true,
