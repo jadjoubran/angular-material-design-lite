@@ -20,6 +20,12 @@ Angular wrapper for [Material Design Lite](http://getmdl.io).
 `<mdl-switch label="Notifications" ng-model="show_notifications"></mdl-switch>`
 
 
+## Configuration options
+
+    angular.module('your-app').config(function(mdlConfigProvider){
+        mdlConfigProvider.floating = false; //default: true. Toggles floating label for mdl-text-field
+    });
+
 ## Questions, Issues and Feature Requests
 
 Open a new issue.
