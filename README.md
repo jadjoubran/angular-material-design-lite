@@ -6,6 +6,9 @@
 Angular wrapper for [Material Design Lite](http://getmdl.io).
 
 
+[DEMO](http://jadjoubran.github.io/angular-material-design-lite/)
+
+
 ## Installation
 
 `bower install angular-material-design-lite`
@@ -42,7 +45,6 @@ Open a new issue.
 
 Here's what I'm planning for the next releases
 
-+ setup gh-pages
 + other classes need options
 + implement progress bars
 + observe important attributes
