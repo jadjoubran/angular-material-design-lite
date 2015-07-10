@@ -8,7 +8,7 @@ Angular wrapper for [Material Design Lite](http://getmdl.io).
 
 ## Installation
 
-`bower install angular-materail-design-lite`
+`bower install angular-material-design-lite`
 
 
 ## Supported Directives
@@ -20,7 +20,7 @@ Angular wrapper for [Material Design Lite](http://getmdl.io).
 `<mdl-switch label="Notifications" ng-model="show_notifications"></mdl-switch>`
 
 
-## Issues and Feature Requests
+## Questions, Issues and Feature Requests
 
 Open a new issue.
 
@@ -28,9 +28,9 @@ Open a new issue.
 
 Here's what I'm planning for the next releases
 
-+ expose configProvider + allow to set options for ripples and floating labels
 + use ng-transclude
 + fix ng-model
++ mdlConfigProvider for ripples
 + abstract ngClass conditions into service?
 + other classes need options?
 + update readme for mdlFloatingText
