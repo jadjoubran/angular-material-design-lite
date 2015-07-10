@@ -1,6 +1,6 @@
 {
   "name": "angular-material-design-lite",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/jadjoubran/angular-material-design-lite",
   "authors": [
     "Jad Joubran <joubran.jad@gmail.com>"
@@ -24,7 +24,7 @@
     "tests"
   ],
   "dependencies": {
-    "angular": "~1.4.2",
+    "angular": "^1.3.0",
     "material-design-lite": "~1.0.0"
   }
 }

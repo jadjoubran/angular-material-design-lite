@@ -22,8 +22,12 @@ Angular wrapper for [Material Design Lite](http://getmdl.io).
 
 ## Configuration options
 
+Floating text labels and ripple effect are enabled by default.  
+Here's how you can disable them:
+
     angular.module('your-app').config(function(mdlConfigProvider){
-        mdlConfigProvider.floating = false; //default: true. Toggles floating label for mdl-text-field
+        mdlConfigProvider.floating = false;
+        mdlConfigProvider.rippleEffect = false;
     });
 
 ## Questions, Issues and Feature Requests
@@ -36,7 +40,6 @@ Here's what I'm planning for the next releases
 
 + use ng-transclude
 + fix ng-model
-+ mdlConfigProvider for ripples
 + abstract ngClass conditions into service?
 + other classes need options?
 + update readme for mdlFloatingText
@@ -48,26 +51,33 @@ Here's what I'm planning for the next releases
 + split components across multiple files
 
 
-## Changelog
 
-### 0.1.0
+### Changelog
+
+#### 0.1.1
+
++ mdlConfigProvider for ripples
++ fixed angularjs dependency in bower
+
+
+#### 0.1.0
 
 + exposed mdlConfigProvider
 + ability to enable/disable ripples using mdlConfigProvider
 
-### 0.0.3
+#### 0.0.3
 
 + implement switch
 
 
-### 0.0.2
+#### 0.0.2
 
 + implement radio
 + implement checkbox
 + fixed ng-model
 
 
-### 0.0.1
+#### 0.0.1
 
 + implement text fields
 + setup bower
