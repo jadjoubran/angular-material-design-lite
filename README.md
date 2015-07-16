@@ -1,5 +1,5 @@
 # angular-material-design-lite
-> Version 0.1.2
+> Version 0.2.0
 
 ![Angular Material Design Lite](http://i.imgur.com/SI4Nmb3.png)
 
@@ -25,6 +25,7 @@ Angular wrapper for [Material Design Lite](http://getmdl.io).
 `<mdl-button theme="primary">Primary Flat button</mdl-button>`   
 `<mdl-button theme="accent">Accept Flat button</mdl-button>`   
 `<mdl-button-raised theme="primary">Primary Raised button</mdl-button-raised>`   
+`<mdl-progress progress="20"></mdl-progress>`   
 
 
 ## Configuration options
@@ -45,11 +46,8 @@ Open a new issue.
 
 Here's what I'm planning for the next releases
 
-+ other classes need options
-+ implement progress bars
-+ observe important attributes
++ implement textarea
 + keep source file in dist/ + generate sourcemap
-+ add examples folder
 + move additional attributes from directive to element
 + fix ng-model
 + abstract ngClass conditions into service
@@ -59,6 +57,12 @@ Here's what I'm planning for the next releases
 
 
 ### Changelog
+
+#### 0.2.0
+
++ implement progress controller
++ with attribute wathcers for progress
++ add examples folder
 
 #### 0.1.2
 

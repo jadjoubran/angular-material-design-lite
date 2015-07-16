@@ -1,0 +1,52 @@
+<html>
+<head>
+    <title>Playground</title>
+    <link rel="stylesheet" href="../bower_components/material-design-lite/material.min.css">
+</head>
+<body ng-app="app" style="padding: 50px;box-sizing:border-box;">
+<script src="../bower_components/angular/angular.min.js"></script>
+<script src="../bower_components/material-design-lite/material.min.js"></script>
+<script src="../dist/angular-material-design-lite.min.js"></script>
+<script>
+    var app = angular.module('app', ['mdl']);
+    app.config(function (mdlConfigProvider){
+        "use strict";
+
+        // mdlConfigProvider.floating = false;
+        // mdlConfigProvider.rippleEffect = false;
+    });</script>
+
+<mdl-text-field label="First Name" ng-model="first_name"></mdl-text-field>
+<br><br>
+<mdl-text-field label="First Name" ng-model="first_name"></mdl-text-field>
+<br><br>
+<mdl-checkbox label="Urgent package" ng-model="is_urgent"></mdl-checkbox>
+<br><br>
+<mdl-radio label="Male" value="male" ng-model="gender"></mdl-radio>
+<br><br>
+<mdl-radio label="Female" value="female" ng-model="gender"></mdl-radio>
+<br><br>
+<mdl-switch label="Notifications" ng-model="show_notifications"></mdl-switch>
+<br><br>
+
+<mdl-button>Hello!</mdl-button>
+<mdl-button theme="primary">Hello!</mdl-button>
+<mdl-button theme="accent">Hello!</mdl-button>
+<br>
+<br>
+<mdl-button-raised>Hello!</mdl-button-raised>
+<mdl-button-raised theme="primary">Hello!</mdl-button-raised>
+<mdl-button-raised theme="accent">Hello!</mdl-button-raised>
+<br>
+<br>
+
+<div>
+    <mdl-text-field label="Dynamic Progress bar" ng-model="progress"></mdl-text-field><br>
+    <br>
+    <mdl-progress progress="{{progress}}"></mdl-progress>
+    <br>
+    <mdl-progress progress="20"></mdl-progress>
+</div>
+
+</body>
+</html>
