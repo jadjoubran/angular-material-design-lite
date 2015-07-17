@@ -124,7 +124,7 @@
   angular.module('mdl').directive('mdlProgress', function (mdlConfig){
     return {
       restrict: 'E',
-      template: '<div id="p1" class="mdl-progress mdl-js-progress"></div>',
+      template: '<div id="p1" class="mdl-progress mdl-js-progress" ng-model="ngModel"></div>',
       scope: {
         ngModel: '='
       },
@@ -143,14 +143,21 @@
             }
           }
         });
-        $scope.ngClass = {
-          'mdl-js-ripple-effect': mdlConfig.rippleEffect,
-          'mdl-button--primary': $attrs.theme === 'primary',
-          'mdl-button--accent': $attrs.theme === 'accent'
-        };
       }
     };
   });
 
+  angular.module('mdl').directive('mdlTextArea', function (mdlConfig){
+    return {
+      restrict: 'E',
+      template: ' <div class="mdl-textfield mdl-js-textfield"><textarea class="mdl-textfield__input" type="text" ng-model="ngModel"></textarea><label class="mdl-textfield__label">{{label}}</label></div>',
+      scope: {
+        ngModel: '='
+      },
+      link: function ($scope, el, $attrs){
+        $scope.label = $attrs.label;
+      }
+    };
+  });
 
 })();

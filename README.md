@@ -26,7 +26,7 @@ Angular wrapper for [Material Design Lite](http://getmdl.io).
 `<mdl-button theme="accent">Accept Flat button</mdl-button>`   
 `<mdl-button-raised theme="primary">Primary Raised button</mdl-button-raised>`   
 `<mdl-progress progress="20"></mdl-progress>`   
-
+`<mdl-text-area label="Textarea!"></mdl-text-area>`
 
 ## Configuration options
 
@@ -46,7 +46,8 @@ Open a new issue.
 
 Here's what I'm planning for the next releases
 
-+ implement textarea
+
++ update gh-pages
 + keep source file in dist/ + generate sourcemap
 + move additional attributes from directive to element
 + fix ng-model
@@ -57,6 +58,9 @@ Here's what I'm planning for the next releases
 
 
 ### Changelog
+
+### 0.2.1
++ implement textarea
 
 #### 0.2.0
 
