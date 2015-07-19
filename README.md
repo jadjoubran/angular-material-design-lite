@@ -47,10 +47,8 @@ Open a new issue.
 Here's what I'm planning for the next releases
 
 
-+ update gh-pages
 + keep source file in dist/ + generate sourcemap
 + move additional attributes from directive to element
-+ fix ng-model
 + abstract ngClass conditions into service
 + split components across multiple files
 + automate releases using gulp
@@ -61,6 +59,7 @@ Here's what I'm planning for the next releases
 
 ### 0.2.1
 + implement textarea
++ added documentation on heroku instead of gh-pages
 
 #### 0.2.0
 

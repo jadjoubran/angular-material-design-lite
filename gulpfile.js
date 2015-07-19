@@ -11,7 +11,8 @@
     .pipe( rename('angular-material-design-lite.min.js') )
     .pipe( ngAnnotate() )
     .pipe( uglify() )
-    .pipe( gulp.dest('./dist') );
+    .pipe( gulp.dest('./dist') )
+    .pipe( gulp.dest('./documentation/js') );
   });
 
   gulp.task('watch', function() {
