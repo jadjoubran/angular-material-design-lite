@@ -6,7 +6,7 @@
 Angular wrapper for [Material Design Lite](http://getmdl.io).
 
 
-[DEMO](http://jadjoubran.github.io/angular-material-design-lite/)
+[View Documentation & Demo](https://desolate-fjord-7338.herokuapp.com/)
 
 
 ## Installation
