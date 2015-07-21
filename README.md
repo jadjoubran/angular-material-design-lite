@@ -16,17 +16,7 @@ Angular wrapper for [Material Design Lite](http://getmdl.io).
 
 ## Supported Directives
 
-`<mdl-text-field label="First Name" ng-model="first_name"></mdl-text-field>`  
-`<mdl-checkbox label="Urgent package" ng-model="is_urgent"></mdl-checkbox>`  
-`<mdl-radio label="Male" value="male" ng-model="gender"></mdl-radio>`  
-`<mdl-radio label="Female" value="female" ng-model="gender"></mdl-radio>`  
-`<mdl-switch label="Notifications" ng-model="show_notifications"></mdl-switch>`   
-`<mdl-button>Flat button</mdl-button>`   
-`<mdl-button theme="primary">Primary Flat button</mdl-button>`   
-`<mdl-button theme="accent">Accept Flat button</mdl-button>`   
-`<mdl-button-raised theme="primary">Primary Raised button</mdl-button-raised>`   
-`<mdl-progress progress="20"></mdl-progress>`   
-`<mdl-text-area label="Textarea!"></mdl-text-area>`
+[Check Documentation](https://desolate-fjord-7338.herokuapp.com/)
 
 ## Configuration options
 
