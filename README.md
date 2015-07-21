@@ -1,5 +1,5 @@
 # angular-material-design-lite
-> Version 0.2.2
+> Version 0.2.3
 
 ![Angular Material Design Lite](http://i.imgur.com/SI4Nmb3.png)
 
