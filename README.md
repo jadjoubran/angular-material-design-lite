@@ -1,5 +1,5 @@
 # angular-material-design-lite
-> Version 0.2.0
+> Version 0.2.2
 
 ![Angular Material Design Lite](http://i.imgur.com/SI4Nmb3.png)
 
@@ -46,8 +46,6 @@ Open a new issue.
 
 Here's what I'm planning for the next releases
 
-
-+ keep source file in dist/ + generate sourcemap
 + move additional attributes from directive to element
 + abstract ngClass conditions into service
 + split components across multiple files
@@ -56,6 +54,10 @@ Here's what I'm planning for the next releases
 
 
 ### Changelog
+
+### 0.2.2
++ keep source file in dist/
++ generate sourcemap
 
 ### 0.2.1
 + implement textarea
