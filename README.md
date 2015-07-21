@@ -1,5 +1,5 @@
 # angular-material-design-lite
-> Version 0.2.3
+> Version 0.3.0
 
 ![Angular Material Design Lite](http://i.imgur.com/SI4Nmb3.png)
 
@@ -36,7 +36,9 @@ Open a new issue.
 
 Here's what I'm planning for the next releases
 
-+ support indeterminite progress bar
++ add tooltip support
++ add tabs support
++ support indeterminate progress bar
 + move additional attributes from directive to element
 + abstract ngClass conditions into service
 + split components across multiple files
@@ -45,6 +47,9 @@ Here's what I'm planning for the next releases
 
 
 ### Changelog
+
+### 0.3.0
++ implemented configurable floating for mdl-textarea
 
 ### 0.2.3
 + update documentation
