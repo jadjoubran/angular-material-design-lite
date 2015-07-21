@@ -46,6 +46,7 @@ Open a new issue.
 
 Here's what I'm planning for the next releases
 
++ support indeterminite progress bar
 + move additional attributes from directive to element
 + abstract ngClass conditions into service
 + split components across multiple files
@@ -54,6 +55,10 @@ Here's what I'm planning for the next releases
 
 
 ### Changelog
+
+### 0.2.3
++ update documentation
++ support spinner
 
 ### 0.2.2
 + keep source file in dist/

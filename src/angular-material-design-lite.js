@@ -91,7 +91,6 @@
             },
             transclude: true,
             link: function ($scope, el, $attrs){
-                $scope.label = $attrs.label;
                 $scope.ngClass = {
                     'mdl-js-ripple-effect': mdlConfig.rippleEffect,
                     'mdl-button--primary': $attrs.theme === 'primary',
@@ -110,7 +109,6 @@
             },
             transclude: true,
             link: function ($scope, el, $attrs){
-                $scope.label = $attrs.label;
                 $scope.ngClass = {
                     'mdl-js-ripple-effect': mdlConfig.rippleEffect,
                     'mdl-button--primary': $attrs.theme === 'primary',
@@ -150,12 +148,28 @@
     angular.module('mdl').directive('mdlTextArea', function (mdlConfig){
         return {
             restrict: 'E',
-            template: ' <div class="mdl-textfield mdl-js-textfield"><textarea class="mdl-textfield__input" type="text" ng-model="ngModel"></textarea><label class="mdl-textfield__label">{{label}}</label></div>',
+            template: '<div class="mdl-textfield mdl-js-textfield"><textarea class="mdl-textfield__input" type="text" ng-model="ngModel"></textarea><label class="mdl-textfield__label">{{label}}</label></div>',
             scope: {
                 ngModel: '='
             },
             link: function ($scope, el, $attrs){
                 $scope.label = $attrs.label;
+            }
+        };
+    });
+
+
+    angular.module('mdl').directive('mdlSpinner', function (mdlConfig){
+        return {
+            restrict: 'E',
+            template: '<div class="mdl-spinner mdl-js-spinner is-active" ng-class="ngClass" ng-model="ngModel"></div>',
+            scope: {
+                ngModel: '='
+            },
+            link: function ($scope, el, $attrs){
+                $scope.ngClass = {
+                    'mdl-spinner--single-color': $attrs.singleColor
+                };
             }
         };
     });
