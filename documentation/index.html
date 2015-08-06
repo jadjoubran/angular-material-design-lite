@@ -55,6 +55,7 @@
             <a href="#install" class="mdl-layout__tab">Install</a>
             <a href="#config" class="mdl-layout__tab">Config</a>
             <a href="#directives" class="mdl-layout__tab">Directives</a>
+            <a href="#upgrading_components" class="mdl-layout__tab">Upgrading Components</a>
         </div>
     </header>
     <main class="mdl-layout__content">
@@ -181,6 +182,18 @@
                     <mdl-spinner single-color="true"></mdl-spinner>
                     <br>
                     <br>
+                </div>
+            </section>
+        </div>
+        <div class="mdl-layout__tab-panel" id="upgrading_components">
+            <section class="section--center mdl-grid mdl-grid--no-spacing">
+                <div class="mdl-cell mdl-cell--12-col">
+                    <h4>Upgrading Components</h4>
+                   MDL Components inside <strong>ng-if</strong> or <strong>dynamic templates</strong> needs to be manually upgraded as per the [MDL docs](http://www.getmdl.io/started/index.html#dynamic)<br>
+                    You can use the <strong>mdl-upgrade</strong> attribute directive on elements that needs to be manually upgraded.<br>
+                    Check the <a href="https://github.com/jadjoubran/angular-material-design-lite/blob/master/examples/index.html" target="_blank">example</a> for more information.
+
+                      <pre style="font-size:18px;">&lt;mdl-button-raised mdl-upgrade ng-if="!!show"&gt;Component upgraded&lt;/mdl-button-raised&gt;</pre>
                 </div>
             </section>
         </div>

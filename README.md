@@ -28,6 +28,11 @@ Here's how you can disable them:
         mdlConfigProvider.rippleEffect = false;
     });
 
+## Upgrading components in dynamic templates
+
+You can use the `mdl-upgrade` attribute directive on elements that are inside ng-if or dynamically injected templates.
+Check [issue #4](https://github.com/jadjoubran/angular-material-design-lite/issues/4) for more information.
+
 ## Questions, Issues and Feature Requests
 
 Open a new issue.
@@ -36,6 +41,7 @@ Open a new issue.
 
 Here's what I'm planning for the next releases
 
++ prism.js for docs
 + add tooltip support
 + add tabs support
 + support indeterminate progress bar
@@ -47,6 +53,9 @@ Here's what I'm planning for the next releases
 
 
 ### Changelog
+
+### 0.4.0
++ mdl-upgrade directive. Temporary solution for [issue #4](https://github.com/jadjoubran/angular-material-design-lite/issues/4)
 
 ### 0.3.0
 + implemented configurable floating for mdl-textarea
