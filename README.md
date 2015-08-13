@@ -56,6 +56,9 @@ Here's what I'm planning for the next releases
 
 ### Changelog
 
+### 0.4.1
++ fixed [Switch not responding to model change #8](https://github.com/jadjoubran/angular-material-design-lite/issues/8)
+
 ### 0.4.0
 + mdl-upgrade directive. Temporary solution for [issue #4](https://github.com/jadjoubran/angular-material-design-lite/issues/4)
 
