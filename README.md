@@ -41,6 +41,8 @@ Open a new issue.
 
 Here's what I'm planning for the next releases
 
++ update to mdl 1.0.2
++ move changelog to CHANGELOG.md + draft releases
 + prism.js for docs
 + add tooltip support
 + add tabs support
