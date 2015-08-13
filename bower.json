@@ -20,6 +20,7 @@
     "**/.*",
     "node_modules",
     "bower_components",
+    "documentation",
     "test",
     "tests"
   ],
