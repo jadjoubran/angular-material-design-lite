@@ -1,5 +1,6 @@
 {
   "name": "angular-material-design-lite",
+  "version": "0.4.1",
   "description": "Angular wrapper for Material Design Lite.",
   "dependencies": {
     "express": "^4.13.1"
