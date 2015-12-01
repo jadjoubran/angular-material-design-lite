@@ -18,12 +18,13 @@
   angular.module('mdl').directive('mdlTextField', function(mdlConfig){
     return {
       restrict: 'E',
-      template: '<div class="mdl-textfield mdl-js-textfield" ng-class="ngClass"><input class="mdl-textfield__input" type="text" ng-model="ngModel" /><label class="mdl-textfield__label">{{label}}</label></div>',
+      template: '<div class="mdl-textfield mdl-js-textfield" ng-class="ngClass"><input class="mdl-textfield__input" type="{{type}}" ng-model="ngModel" /><label class="mdl-textfield__label">{{label}}</label></div>',
       scope: {
         ngModel: '='
       },
       link: function($scope, el, $attrs){
         $scope.label = $attrs.label;
+        $scope.type = $attrs.type ? $attrs.type : 'text';
         $scope.ngClass = {
           'mdl-textfield--floating-label': mdlConfig.floating
         };
@@ -205,6 +206,66 @@
       },
     };
 
+  });
+
+  angular.module('mdl').directive('mdlLayout', function(mdlConfig){
+    return {
+      restrict: 'E',
+      transclude: true,
+      template: '<div class="mdl-layout mdl-js-layout {{classlist}}" '+
+                'ng-class="layoutClasses">'+
+                '<header class="mdl-layout__header" ng-class="headerClasses" ng-show="showHeader">'+
+                '<div class="mdl-layout__header-row">'+
+                '<span class="mdl-layout-title">{{headerTitle}}</span>'+
+                '<div class="mdl-layout-spacer"></div>'+
+                '<nav class="mdl-navigation">'+
+                '<span ng-repeat="el in headerItems">'+
+                '<a class="mdl-navigation__link" ng-show="!el.download"'+
+                'ng-href="{{el.href||\'\'}}" hreflang="{{el.hreflang||\'\'}}" media="{{el.media||\'\'}}" rel="{{el.rel||\'\'}}" shape="{{el.shape||\'\'}}" target="{{el.target||\'_self\'}}" type="{{el.type||\'text/html\'}}" ng-click="el.onclick()"'+
+                '>{{el.text}}</a>'+
+                '<a class="mdl-navigation__link" ng-show="!!el.download" download ng-href="{{el.href||\'\'}}">{{el.text}}</a>'+
+                '</span>'+
+                '</nav>'+
+                '</div>'+
+                '</header>'+
+                '<div class="mdl-layout__drawer">'+
+                '<span class="mdl-layout-title">{{menuTitle}}</span>'+
+                '<nav class="mdl-navigation">'+
+                '<span ng-repeat="el in menuItems">'+
+                '<a class="mdl-navigation__link" ng-show="!el.download"'+
+                'ng-href="{{el.href||\'\'}}" hreflang="{{el.hreflang||\'\'}}" media="{{el.media||\'\'}}" rel="{{el.rel||\'\'}}" shape="{{el.shape||\'\'}}" target="{{el.target||\'_self\'}}" type="{{el.type||\'text/html\'}}" ng-click="el.onclick()"'+
+                '>{{el.text}}</a>'+
+                '<a class="mdl-navigation__link" ng-show="!!el.download" download ng-href="{{el.href||\'\'}}">{{el.text}}</a>'+
+                '</span>'+
+                '</nav>'+
+                '</div>'+
+                '<main class="mdl-layout__content" ng-transclude>'+
+                '</main>'+
+                '</div>'
+                ,
+      scope: {
+        'class': '@',
+        ngModel: '=',
+        menuItems: '=',
+        menuTitle: '=',
+        headerItems: '=',
+        headerTitle: '=',
+      },
+      link: function($scope, el, $attrs){
+        $scope.classlist = $attrs['class'];
+        $scope.fixedDrawer = $attrs.fixedDrawer;
+        $scope.headerTransparent = $attrs.headerTransparent;
+        $scope.fixedHeader = $attrs.fixedHeader;
+        $scope.showHeader = !$attrs.headerHidden;
+        $scope.layoutClasses = {
+          'mdl-layout--fixed-drawer':$attrs.fixedDrawer
+        };
+        $scope.headerClasses = {
+          'mdl-layout__header--transparent': $attrs.headerTransparent,
+          'mdl-layout--fixed-header': $attrs.fixedHeader
+        };
+      }
+    };
   });
 
 })();
