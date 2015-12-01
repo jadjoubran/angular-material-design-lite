@@ -208,7 +208,7 @@
 
   });
 
-  angular.module('mdl').directive('mdlLayout', function(mdlConfig){
+  angular.module('mdl').directive('mdlNavigationLayout', function(mdlConfig){
     return {
       restrict: 'E',
       transclude: true,
@@ -216,10 +216,10 @@
                 'ng-class="layoutClasses">'+
                 '<header class="mdl-layout__header" ng-class="headerClasses" ng-show="showHeader">'+
                 '<div class="mdl-layout__header-row">'+
-                '<span class="mdl-layout-title">{{headerTitle}}</span>'+
+                '<span class="mdl-layout-title">{{mdlHeaderTitle}}</span>'+
                 '<div class="mdl-layout-spacer"></div>'+
                 '<nav class="mdl-navigation">'+
-                '<span ng-repeat="el in headerItems">'+
+                '<span ng-repeat="el in mdlHeaderItems">'+
                 '<a class="mdl-navigation__link" ng-show="!el.download"'+
                 'ng-href="{{el.href||\'\'}}" hreflang="{{el.hreflang||\'\'}}" media="{{el.media||\'\'}}" rel="{{el.rel||\'\'}}" shape="{{el.shape||\'\'}}" target="{{el.target||\'_self\'}}" type="{{el.type||\'text/html\'}}" ng-click="el.onclick()"'+
                 '>{{el.text}}</a>'+
@@ -229,9 +229,9 @@
                 '</div>'+
                 '</header>'+
                 '<div class="mdl-layout__drawer">'+
-                '<span class="mdl-layout-title">{{menuTitle}}</span>'+
+                '<span class="mdl-layout-title">{{mdlMenuTitle}}</span>'+
                 '<nav class="mdl-navigation">'+
-                '<span ng-repeat="el in menuItems">'+
+                '<span ng-repeat="el in mdlMenuItems">'+
                 '<a class="mdl-navigation__link" ng-show="!el.download"'+
                 'ng-href="{{el.href||\'\'}}" hreflang="{{el.hreflang||\'\'}}" media="{{el.media||\'\'}}" rel="{{el.rel||\'\'}}" shape="{{el.shape||\'\'}}" target="{{el.target||\'_self\'}}" type="{{el.type||\'text/html\'}}" ng-click="el.onclick()"'+
                 '>{{el.text}}</a>'+
@@ -245,24 +245,23 @@
                 ,
       scope: {
         'class': '@',
-        ngModel: '=',
-        menuItems: '=',
-        menuTitle: '=',
-        headerItems: '=',
-        headerTitle: '=',
+        mdlMenuItems: '=',
+        mdlMenuTitle: '=',
+        mdlHeaderItems: '=',
+        mdlHeaderTitle: '=',
       },
       link: function($scope, el, $attrs){
         $scope.classlist = $attrs['class'];
-        $scope.fixedDrawer = $attrs.fixedDrawer;
-        $scope.headerTransparent = $attrs.headerTransparent;
-        $scope.fixedHeader = $attrs.fixedHeader;
-        $scope.showHeader = !$attrs.headerHidden;
+        $scope.mdlFixedDrawer = $attrs.mdlFixedDrawer;
+        $scope.mdlHeaderTransparent = $attrs.mdlHeaderTransparent;
+        $scope.mdlFixedHeader = $attrs.mdlFixedHeader;
+        $scope.showHeader = !$attrs.mdlHeaderHidden;
         $scope.layoutClasses = {
-          'mdl-layout--fixed-drawer':$attrs.fixedDrawer
+          'mdl-layout--fixed-drawer':$attrs.mdlFixedDrawer
         };
         $scope.headerClasses = {
-          'mdl-layout__header--transparent': $attrs.headerTransparent,
-          'mdl-layout--fixed-header': $attrs.fixedHeader
+          'mdl-layout__header--transparent': $attrs.mdlHeaderTransparent,
+          'mdl-layout--fixed-header': $attrs.mdlFixedHeader
         };
       }
     };
