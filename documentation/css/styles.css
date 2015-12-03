@@ -259,3 +259,29 @@
 .mdl-layout__header{
   z-index: 1;
 }
+
+.menu-containter {
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+
+.menu-containter .mdl-layout:not(.is-small-screen) .mdl-layout__drawer-button {
+  display: inline-block;
+}
+
+.menu-containter .mdl-layout__header-row {
+  padding-left: 75px;
+  padding-top: 10px;
+  height: 53px;
+}
+
+.demo-layout-transparent {
+  background: url('../images/transparent.jpg') center / cover;
+}
+
+.demo-layout-transparent .mdl-layout__header,
+.demo-layout-transparent .mdl-layout__drawer-button {
+  color: white;
+}
+
