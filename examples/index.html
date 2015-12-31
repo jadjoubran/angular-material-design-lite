@@ -16,9 +16,10 @@
         // mdlConfigProvider.rippleEffect = false;
     });</script>
 
-<mdl-text-field label="First Name" ng-model="first_name"></mdl-text-field>
-<br><br>
-<mdl-text-field label="First Name" ng-model="first_name"></mdl-text-field>
+<input mdl-text-field type="text" placeholder="test" />
+<br>
+<textarea name="" mdl-text-field></textarea>
+
 <br><br>
 <mdl-checkbox label="Urgent package" ng-model="is_urgent"></mdl-checkbox>
 <br><br>
@@ -46,7 +47,7 @@
 <br>
 
 <div>
-    <mdl-text-field label="Dynamic Progress bar" ng-model="progress"></mdl-text-field><br>
+    <input type="text" placeholder="Dynamic Progress bar" ng-model="progress"/><br>
     <br>
     <mdl-progress progress="{{progress}}"></mdl-progress>
     <br>
@@ -55,8 +56,6 @@
 
 <br>
 <br>
-<mdl-text-area label="Textarea!"></mdl-text-area>
-
 <br>
 <br>
 <mdl-spinner></mdl-spinner>
@@ -64,11 +63,11 @@
 <br>
 <mdl-spinner single-color="true"></mdl-spinner>
 <br><br>
-<mdl-navigation-layout class="class list" 
-    mdl-header-title="'Header Title'" 
-    mdl-header-items="[{'text':'Lorem',href:'#/lorem'}, {'text':'Ipsum',href:'#/ipsum'}]" 
-    mdl-menu-title="'Menu Title'" 
-    mdl-menu-items="[{'text':'Item 1',href:'#/a'}, {'text':'Item 2',href:'#/b'}]" 
+<mdl-navigation-layout class="class list"
+    mdl-header-title="'Header Title'"
+    mdl-header-items="[{'text':'Lorem',href:'#/lorem'}, {'text':'Ipsum',href:'#/ipsum'}]"
+    mdl-menu-title="'Menu Title'"
+    mdl-menu-items="[{'text':'Item 1',href:'#/a'}, {'text':'Item 2',href:'#/b'}]"
     fixed-drawer="true"
     fixed-header="true">
 </mdl-layout>

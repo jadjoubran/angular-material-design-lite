@@ -124,8 +124,8 @@
             <section class="section--center mdl-grid mdl-grid--no-spacing">
                 <div class="mdl-cell mdl-cell--12-col">
                     <h4>Text Field</h4>
-                    <pre style="font-size:18px;">&lt;mdl-text-field label="First Name" ng-model="first_name"&gt;&lt;/mdl-text-field&gt;</pre>
-                    <mdl-text-field label="First Name" ng-model="first_name"></mdl-text-field>
+                    <pre style="font-size:18px;">&lt;input type="text" placeholder="First Name" ng-model="first_name" mdl-text-field/&gt;</pre>
+                    <input type="text" placeholder="First Name" ng-model="first_name" mdl-text-field/>
 
                     <h4>Checkbox</h4>
                     <pre style="font-size:18px;">&lt;mdl-checkbox label="Urgent package" ng-model="is_urgent"&gt;&lt;/mdl-checkbox&gt;</pre>
@@ -159,10 +159,10 @@
                     <br>
                     <br>
                     <div>
-                        <pre style="font-size:18px">&lt;mdl-text-field label="Dynamic Progress bar" ng-model="progress"&gt;&lt;/mdl-text-field&gt;</pre>
-                        <pre style="font-size:18px" ng-non-bindable>&lt;mdl-progress progress="{{progress}}"&gt;&lt;/mdl-progress&gt;</pre>
+                        <pre style="font-size:18px">&lt;input type="text" mdl-text-field placeholder="Dynamic Progress bar" ng-model="progress"/&gt;</pre>
+                        <pre style="font-size:18px" ng-non-bindable>&lt;input type="text" mdl-text-field progress="{{progress}}"/&gt;</pre>
                         <pre style="font-size:18px">&lt;mdl-progress progress="20"&gt;&lt;/mdl-progress&gt;</pre>
-                        <mdl-text-field label="Dynamic Progress bar" ng-model="progress"></mdl-text-field>
+                        <input type="text" mdl-text-field placeholder="Dynamic Progress bar" ng-model="progress"/>
                         <br>
                         <br>
                         <mdl-progress progress="{{progress}}"></mdl-progress>
@@ -171,8 +171,8 @@
                     </div>
                     <br>
                     <br>
-                    <pre style="font-size:18px">&lt;mdl-text-area label="Textarea!"&gt;&lt;/mdl-text-area&gt;</pre>
-                    <mdl-text-area label="Textarea!"></mdl-text-area>
+                    <pre style="font-size:18px">&lt;text-area placeholder="Label here" mdl-text-field&gt;&lt;/textarea&gt;</pre>
+                    <textarea placeholder="Label here" mdl-text-field></textarea>
                     <br>
                     <br>
                     <pre style="font-size:18px">&lt;mdl-spinner&gt;&lt;/mdl-spinner&gt;</pre>
@@ -186,11 +186,11 @@
                     <h4>Layouts</h4>
                     <br>
                     <pre style="font-size:18px">
-&lt;mdl-navigation-layout class="class list" 
-    mdl-header-title="'Header Title'" 
-    mdl-header-items="[{'text':'Lorem',href:'#/lorem'}, {'text':'Ipsum',href:'#/ipsum'}]" 
-    mdl-menu-title="'Menu Title'" 
-    mdl-menu-items="[{'text':'Item 1',href:'#/a'}, {'text':'Item 2',href:'#/b'}]" 
+&lt;mdl-navigation-layout class="class list"
+    mdl-header-title="'Header Title'"
+    mdl-header-items="[{'text':'Lorem',href:'#/lorem'}, {'text':'Ipsum',href:'#/ipsum'}]"
+    mdl-menu-title="'Menu Title'"
+    mdl-menu-items="[{'text':'Item 1',href:'#/a'}, {'text':'Item 2',href:'#/b'}]"
     mdl-header-transparent="true"&gt;
 &lt;/mdl-layout&gt;
                     </pre>
@@ -201,16 +201,16 @@
                           mdl-header-items="[{'text':'Lorem',href:'#/lorem'}, {'text':'Ipsum',href:'#/ipsum'}]"
                           mdl-menu-title="'Menu Title'"
                           mdl-menu-items="[{'text':'Item 1',href:'#/a'}, {'text':'Item 2',href:'#/b'}]"
-                          mdl-header-transparent="true" 
+                          mdl-header-transparent="true"
                           >
                         </mdl-layout>
                     </div>
                     <br>
                     <pre style="font-size:18px">
-&lt;mdl-navigation-layout class="class list" 
-    mdl-header-title="'Header Title'" 
-    mdl-header-items="[{'text':'Lorem',href:'#/lorem'}, {'text':'Ipsum',href:'#/ipsum'}]" 
-    mdl-menu-title="'Menu Title'" 
+&lt;mdl-navigation-layout class="class list"
+    mdl-header-title="'Header Title'"
+    mdl-header-items="[{'text':'Lorem',href:'#/lorem'}, {'text':'Ipsum',href:'#/ipsum'}]"
+    mdl-menu-title="'Menu Title'"
     mdl-menu-items="[{'text':'Item 1',href:'#/a'}, {'text':'Item 2',href:'#/b'}]"
     mdl-fixed-drawer="true"
     mdl-header-hidden="true"&gt;
@@ -221,7 +221,7 @@
                           mdl-header-title="'Header Title'"
                           mdl-header-items="[{'text':'Lorem',href:'#/lorem'}, {'text':'Ipsum',href:'#/ipsum'}]"
                           mdl-menu-items="[{'text':'Item 1',href:'#/a'}, {'text':'Item 2',href:'#/b'}]"
-                          mdl-menu-title="'Menu Title'" 
+                          mdl-menu-title="'Menu Title'"
                           mdl-fixed-drawer="true"
                           mdl-header-hidden="true"
                           >
@@ -229,11 +229,11 @@
                     </div>
                     <br>
                     <pre style="font-size:18px">
-&lt;mdl-navigation-layout class="class list" 
-    mdl-header-title="'Header Title'" 
-    mdl-header-items="[{'text':'Lorem',href:'#/lorem'}, {'text':'Ipsum',href:'#/ipsum'}]" 
-    mdl-menu-title="'Menu Title'" 
-    mdl-menu-items="[{'text':'Item 1',href:'#/a'}, {'text':'Item 2',href:'#/b'}]" 
+&lt;mdl-navigation-layout class="class list"
+    mdl-header-title="'Header Title'"
+    mdl-header-items="[{'text':'Lorem',href:'#/lorem'}, {'text':'Ipsum',href:'#/ipsum'}]"
+    mdl-menu-title="'Menu Title'"
+    mdl-menu-items="[{'text':'Item 1',href:'#/a'}, {'text':'Item 2',href:'#/b'}]"
     mdl-fixed-header="true"&gt;
 &lt;/mdl-layout&gt;
                     </pre>
@@ -249,11 +249,11 @@
                     </div>
                     <br>
                     <pre style="font-size:18px">
-&lt;mdl-navigation-layout class="class list" 
-    mdl-header-title="'Header Title'" 
-    mdl-header-items="[{'text':'Lorem',href:'#/lorem'}, {'text':'Ipsum',href:'#/ipsum'}]" 
-    mdl-menu-title="'Menu Title'" 
-    mdl-menu-items="[{'text':'Item 1',href:'#/a'}, {'text':'Item 2',href:'#/b'}]" 
+&lt;mdl-navigation-layout class="class list"
+    mdl-header-title="'Header Title'"
+    mdl-header-items="[{'text':'Lorem',href:'#/lorem'}, {'text':'Ipsum',href:'#/ipsum'}]"
+    mdl-menu-title="'Menu Title'"
+    mdl-menu-items="[{'text':'Item 1',href:'#/a'}, {'text':'Item 2',href:'#/b'}]"
     mdl-fixed-drawer="true"
     mdl-fixed-header="true"&gt;
 &lt;/mdl-layout&gt;
