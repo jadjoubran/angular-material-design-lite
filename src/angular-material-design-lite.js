@@ -107,13 +107,14 @@
 
   angular.module('mdl').directive('mdlButton', function(mdlConfig) {
     return {
-      restrict: 'E',
+      restrict: 'A',
       template: '<button class="mdl-button mdl-js-button" ng-class="ngClass" ng-transclude></button>',
       scope: {
         ngModel: '='
       },
       transclude: true,
       link: function($scope, el, $attrs) {
+        el.css('display', 'inline-block');
         $scope.ngClass = {
           'mdl-js-ripple-effect': mdlConfig.rippleEffect,
           'mdl-button--primary': $attrs.theme === 'primary',
@@ -125,13 +126,14 @@
 
   angular.module('mdl').directive('mdlButtonRaised', function(mdlConfig) {
     return {
-      restrict: 'E',
+      restrict: 'A',
       template: '<button class="mdl-button mdl-js-button mdl-button--raised" ng-class="ngClass" ng-transclude></button>',
       scope: {
         ngModel: '='
       },
       transclude: true,
       link: function($scope, el, $attrs) {
+        el.css('display', 'inline-block');
         $scope.ngClass = {
           'mdl-js-ripple-effect': mdlConfig.rippleEffect,
           'mdl-button--primary': $attrs.theme === 'primary',
