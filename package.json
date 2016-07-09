@@ -2,16 +2,15 @@
   "name": "angular-material-design-lite",
   "version": "0.4.1",
   "description": "Angular wrapper for Material Design Lite.",
-  "main": "./dist/angular-material-design-lite.js",
-  "dependencies": {
-    "express": "^4.13.1"
-  },
+  "main": "./dist/angular-material-design-lite.min.js",
+  "dependencies": {},
   "devDependencies": {
     "gulp": "^3.9.0",
     "gulp-ng-annotate": "^1.0.0",
     "gulp-rename": "^1.2.2",
     "gulp-sourcemaps": "^1.5.2",
-    "gulp-uglify": "^1.2.0"
+    "gulp-uglify": "^1.2.0",
+    "express": "^4.13.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

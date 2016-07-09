@@ -11,8 +11,15 @@ Angular wrapper for [Material Design Lite](http://getmdl.io).
 
 ## Installation
 
-`bower install angular-material-design-lite`
+```bash
+bower install angular-material-design-lite --save
+```
 
+or using npm
+
+```bash
+npm install angular-material-design-lite --save
+```
 
 ## Supported Directives
 
