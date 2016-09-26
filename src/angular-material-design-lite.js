@@ -261,5 +261,30 @@
       }
     };
   });
+  
+  angular.module('mdl').directive('mdlCardSquare', function(mdlConfig) {
+    return {
+      restrict: 'E',
+      template: '<div class="mdl-card__title mdl-card--expand mdl-color--teal-300" style="{{media}}"> ' +
+      '        <h2 class="mdl-card__title-text" >{{title}}</h2>' +
+      '        </div>' +
+      '        <div class="mdl-card__supporting-text mdl-color-text--grey-600">{{text}}</div>' +
+      '    <div class="mdl-card__actions mdl-card--border">' +
+      '       <a ng-href="{{action}}" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"> Read more </a>' +
+      '        </div>' +
+      '        </div>',
+      scope: {
+        ngModel: '='
+      },
+      transclude: true,
+      link: function($scope, el, $attrs) {
+        el.css('display', 'inline-block');
+        $scope.title= $attrs.title;
+        $scope.action= $attrs.action;
+        $scope.text= $attrs.text;
+        $scope.media = "background: url("+$attrs.media+") no-repeat #46B6AC;";
+      }
+    };
+  });
 
 })();
